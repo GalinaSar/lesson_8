@@ -1,0 +1,268 @@
+@import "null.css";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');
+
+/* 
+
+
+
+
+
+ */
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+body {
+    font-family: 'Kelly Slab', cursive;
+    font-size: 25px;
+    color: midnightblue;
+    
+}
+h1 {
+    font-family: 'Pacifico', cursive;
+    color: rgb(184, 121, 6);
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 30px;
+    background-color: aqua;
+    max-width: 1200px;
+    border: 2px solid red;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0px auto 20px;
+}
+h1:hover {
+    text-shadow: 5px 5px 1px rgb(79, 42, 165);
+}
+h2 {
+    font-family: 'Lobster', cursive;
+    margin-bottom: 30px;
+    color: darkred;
+    font-size: 30px;
+    text-transform: capitalize;
+    text-align: center;
+}
+h2:hover {
+    font-size: 40px;
+color: rgb(33, 160, 65);
+text-shadow: 2px 2px 1px rgb(35, 32, 41);
+}
+.nav {
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(114, 16, 109);
+    background: url('../img/photo_8.jpg') right / 300px 250px no-repeat, linear-gradient(45deg, #a8edea, #fed6e3);
+    text-decoration: underline;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.nav_item li {
+    padding-bottom: 10px;
+    padding-left: 30px;   
+}
+.link:focus {
+    outline: 5px double rgb(97, 4, 4);
+}
+.nav_item li:hover {
+    color: rgb(34, 32, 151);
+    text-shadow: 5px 5px 5px rgb(133, 35, 111);
+}
+.nav_item li:active {
+    display: inline-block;
+    margin: 4px 0px 0px 0px;
+    text-decoration: line-through;
+    color: darkorange;
+}
+
+.nav_item li::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 30px;
+    background: url(../img/sled.gif) 0 0 / 25px no-repeat;
+    margin: 0px 30px 0px 0px;  
+}
+.info {
+    font-family: 'Comforter', cursive;
+    font-size: 30px;
+    font-weight: 900;
+    color: coral;
+    text-align: right;
+    padding-right: 30px;
+    margin-bottom: 30px;
+}
+.info_text1::after {
+    content: "Родезийский риджбек";
+    color: dodgerblue;
+}
+.info_text2::after {
+    content: "Южная Родезия";
+    color: dodgerblue;
+}
+.info_text3::after {
+    content: "кобели ≈ 36,5 кг, суки ≈ 32 кг";
+    color: dodgerblue;
+}
+.info_text4::after {
+    content: "кобели 63-69 см, суки 61-66 см.";
+    color: dodgerblue;
+}
+.info li:hover {
+    color: red;
+    text-decoration: underline;
+}
+.text_1 {
+    font-family: 'IBM Plex Mono', monospace;
+    padding-left: 350px;
+    text-align: justify;
+    background: url('../img/photo_5.jpg') 0 0/auto 100% no-repeat;
+    margin: 0px auto 20px;
+}
+.text_1::first-line {
+    color: #FF3706;
+}
+.text_1::first-letter {
+    color: #85d819;
+    font-size: 30px;
+}
+.text_1:hover {
+    color: rgb(230, 49, 169);
+    text-shadow: 5px 5px 5px rgb(12, 64, 177);
+}
+.info_2 {
+    font-family: 'Marck Script', cursive;
+    color: rgb(225, 240, 23);
+    text-shadow: 2px 3px 3px red;
+    counter-reset: item;
+    max-width: 800px;
+    max-height: 500px;
+    overflow: scroll;
+    background: url('../img/photo_7.jpg') 0 0/cover no-repeat; 
+    margin: 0px auto 20px;
+}
+.info_2 li::before {
+    counter-increment: item;
+    content: "(" counter(item) ")";
+    margin-right: 10px;
+    color: rgb(83, 11, 250);
+}
+.info_2 li:hover {
+    font-size: 30px;
+}
+.info_2 li:first-child {
+    background-color: rgb(24, 22, 15);
+}
+.info_2 li:last-of-type {
+    background-color: darkgray;
+    opacity: 0.5;
+}
+.info_2 li:nth-child(3) {
+    color: rgb(69, 18, 209);
+}
+.info_2 li:nth-child(6) {
+    color: rgb(29, 61, 8);
+    border: red solid 2px;
+}
+.info_2 li:nth-child(9) {
+    color: rgb(11, 15, 230);
+   
+}
+.text_2 {
+    background: url('../img/phon.jpg') 0 0 / 100% auto no-repeat;
+    margin: 0px auto 20px;
+}
+.text_2 p:first-of-type {
+    background-color: aqua;
+    opacity: 0.5;
+}
+.text_2 p:not(.fact) {
+    font-family: 'Reggae One', cursive;
+    color: rgb(16, 105, 43);
+    text-shadow: 2px 2px 5px rgb(35, 32, 41);
+}
+.text_2 p:nth-child(3) {
+    color: #550631;
+    outline: 5px dotted #FF3706;
+}
+.text_2 p:hover {
+    font-size: 30px;
+    background-color: #d5f158;
+}
+.fact {
+    color: rgb(15, 5, 63);
+    font-size: 30px;
+    padding: 10px 50px;
+    text-decoration: underline;
+    text-shadow: 2px 2px 5px rgb(241, 140, 7);
+    text-align: justify;
+}
+
+.ridg {
+    display: inline-block;
+    text-align: justify;
+    font-family: 'Comforter', cursive;
+    background: linear-gradient(45deg, #F17C58, #E94584, #24AADB, #27DBB1, #FFDC18, #FF3706);
+}
+.ridg:hover {
+    font-weight: 900;
+    font-size: 35px;
+}
+.ridg::after {
+    content: "";
+    display: block;
+    width: 1200px;
+    height: 200px;
+    background: url('../img/photo_1.jpg') 0 0px / 400px space;
+    margin: 0px auto 20px;
+}
+.info_3 {
+margin-bottom: 30px;
+
+}
+.info_3 > *:last-child {
+    margin-bottom: 0;
+}
+.info_3_text {
+   color: #E94584;
+   padding: 30px;
+}
+.info_3_text:hover:not(first-child) {
+    font-size: 35px;
+    border: 2px solid #FF3706;
+}
+.info_3_text:first-child {
+    background: url('../img/photo_6.jpg')   top right / 150px no-repeat, url('../img/photo_3.jpg')  0 0px / 250px no-repeat, rgb(99, 163, 216);
+    min-height: 150px;
+    padding-left: 260px ;
+    padding-right: 150px;
+    display: block;
+}
+.info_3_text:nth-child(2n + 3) {
+    background-color: #27DBB1;
+    color: darkorange;
+}
+.info_3_text:nth-child(2n + 2) {
+    background-color: #73e97d;
+    color: rgb(61, 44, 212);
+}
+
+.info_3_text::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 30px;
+    background: url(../img/kleymo-1.png) 0 0px / 30px no-repeat;
+    margin: 0px 30px 0px 0px; 
+
+}
